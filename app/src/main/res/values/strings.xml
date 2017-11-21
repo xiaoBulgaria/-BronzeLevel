@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">HenCoder 绘制 1</string>
 
+    <string name="title_draw_test">test</string>
+
     <string name="title_draw_color">drawColor()</string>
 
     <string name="title_draw_circle">drawCircle()</string>
