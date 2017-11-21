@@ -2,6 +2,7 @@ package View;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -24,6 +25,8 @@ public class Practice5DrawOvalView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-//        练习内容：使用 canvas.drawOval() 方法画椭圆
+//        练习内容：使用 canvas.drawOval() 方法画椭圆]
+        Paint paint = new Paint();
+        canvas.drawOval(200f,40f,500f,200f,paint);
     }
 }

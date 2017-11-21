@@ -2,6 +2,7 @@ package View;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -32,9 +33,9 @@ public class Practice4DrawPointView extends View {
         Paint paint = new Paint();
         Paint paint1 = new Paint();
 
-        paint.setStrokeWidth(200);
-        paint.setStrokeCap(Paint.Cap.ROUND);
-        canvas.drawPoint(100f,100f,paint);
+        paint.setStrokeWidth(20);
+        paint.setColor(Color.RED );
+        canvas.drawCircle(50f,50f,50f,paint);
 
 
         paint1.setStrokeWidth(200);
