@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     {
 
+        pageModels.add(new PageModel(R.layout.sample_test, R.string.title_draw_test, R.layout.practice_shader));
         pageModels.add(new PageModel(R.layout.sample_test, R.string.title_draw_test, R.layout.practice_test));
         pageModels.add(new PageModel(R.layout.sample_color, R.string.title_draw_color, R.layout.practice_color));
         pageModels.add(new PageModel(R.layout.sample_circle, R.string.title_draw_circle, R.layout.practice_circle));
