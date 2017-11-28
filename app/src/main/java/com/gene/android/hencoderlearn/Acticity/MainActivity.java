@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     List<PageModel> pageModels = new ArrayList<>();
 
     {
-
+        pageModels.add(new PageModel(R.layout.sample_test, R.string.title_draw_test, R.layout.practice_text));
         pageModels.add(new PageModel(R.layout.sample_test, R.string.title_draw_test, R.layout.practice_shader));
         pageModels.add(new PageModel(R.layout.sample_test, R.string.title_draw_test, R.layout.practice_test));
         pageModels.add(new PageModel(R.layout.sample_color, R.string.title_draw_color, R.layout.practice_color));

@@ -6,6 +6,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.LightingColorFilter;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RadialGradient;
@@ -42,9 +44,9 @@ public class PracticeShaderColorView extends View {
         Shader shader = new BitmapShader(bitmap,Shader.TileMode.MIRROR, Shader.TileMode.MIRROR);
         paint.setShader(shader);
 
+        ColorFilter lightingColorFilter = new LightingColorFilter(0xffffff, 0x003000);
+        paint.setColorFilter(lightingColorFilter);
 
         canvas.drawCircle(300,300,200,paint);
-
-
     }
 }
